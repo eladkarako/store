@@ -1,6 +1,8 @@
-::@echo off
+@echo off
 ::move all the images to a temporary-folder, compress them to a single-zip file with password "1".
 chcp 65001 2>nul >nul
+
+if not exist *.jpg ( goto END )
 
 ::new folder
 set "D=%DATE%"
@@ -29,5 +31,8 @@ rmdir /q /q    "%FOLDERNAME%"   1>nul 2>nul
 ::sync with github. this must be done from a repository.
 call "git" "add" "%TIMESTAMP%.zip"
 call "git" "commit" "-m" "u"
-::call "git" "push" "origin" "master"
 call "git" "push" "origin" "_store1_"
+
+
+:END
+  exit /b 0
