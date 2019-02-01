@@ -45,6 +45,6 @@ DirectShow video device options (from video devices)
 
 <h3>How to set and forget?</h3>
 create two "scheduled tasks" using <code>C:\Windows\System32\mmc.exe "C:\Windows\system32\taskschd.msc" /s</code>, 
-the first one for <code>ffmpeg_webcam_image_save_to_PNG_using_the_ISO_IMG_filename_format___faster___with_timestamp_overlay___external_USB_Camera.cmd</code> - set it to run every 1 minute (change 5 minutes min. to 1 minute manually), the second one for <code>compress_jpg_to_zip_and_push_to_git.cmd</code> to run every 5 (or 10) minutes.
+the first one for <code>ffmpeg_webcam_image_save_to_PNG_using_the_ISO_IMG_filename_format___faster___with_timestamp_overlay___USB_Camera.cmd</code> - set it to run every 1 minute (change 5 minutes min. to 1 minute manually), the second one for <code>compress_jpg_to_zip_and_push_to_git.cmd</code> to run every 5 (or 10) minutes.
 
 "disable" the two tasks until you'll need them.
