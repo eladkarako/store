@@ -48,3 +48,10 @@ create two "scheduled tasks" using <code>C:\Windows\System32\mmc.exe "C:\Windows
 the first one for <code>ffmpeg_webcam_image_save_to_PNG_using_the_ISO_IMG_filename_format___faster___with_timestamp_overlay___USB_Camera.cmd</code> - set it to run every 1 minute (change 5 minutes min. to 1 minute manually), the second one for <code>compress_jpg_to_zip_and_push_to_git.cmd</code> to run every 5 (or 10) minutes.
 
 "disable" the two tasks until you'll need them.
+
+<hr/>
+
+Tip: <br/>
+Better image quality on <code>ffmpeg_webcam_image_save_to_PNG_using_the_ISO_IMG_filename_format___faster___with_timestamp_overlay___...</code> <br/>
+use the maximum-framerate possible that is supported by your device. <br/>
+Quicker ffmpeg/batch-file operation - use minimal framerate supported. DO NOT simply use <code>1</code> unless your device actually supportes this value, since you will get an I/O error...
