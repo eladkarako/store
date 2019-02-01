@@ -27,7 +27,7 @@ set "FONT=%FONT:\=/%"
 set "ARGS="
 set  ARGS=%ARGS% -y -hide_banner -loglevel "info" -strict "experimental"
 ::video source arguments
-set  ARGS=%ARGS% -f dshow -video_size "1280x720" -r "10" -framerate "10.0" -pixel_format "yuyv422" 
+set  ARGS=%ARGS% -f dshow -video_size "1280x720" -r "1" -framerate "1.0" -pixel_format "yuyv422" 
 ::limit length
 set  ARGS=%ARGS% -to "00:00:01.000" 
 ::video source
