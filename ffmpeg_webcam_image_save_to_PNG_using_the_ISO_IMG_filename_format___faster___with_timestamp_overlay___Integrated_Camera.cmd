@@ -35,7 +35,7 @@ set  ARGS=%ARGS% -i video="Integrated Camera"
 ::write text on image
 ::set  ARGS=%ARGS% -vf "fps=fps=1,drawtext=fontsize=40:text=%TIMESTAMP%"
 ::write text on image (better date/time format)
-set  ARGS=%ARGS% -vf "fps=fps=1,drawtext=fontsize=40:fontfile=\'%FONT%\':text=\'%DAY%/%MONTH%/%YEAR% %HOURS%\:%MINUTES%\:%SECONDS%\'"
+set  ARGS=%ARGS% -vf "fps=fps=1,drawtext=fontsize=20:fontcolor=yellow:borderw=2:alpha=0.8:fontfile=\'%FONT%\':y=(text_h-line_h+3):text=\'%DAY%/%MONTH%/%YEAR% %HOURS%\:%MINUTES%\:%SECONDS%\'"
 ::write understandable color-format
 set  ARGS=%ARGS% -pixel_format "yuv420p" 
 ::explicitly disable other streams
