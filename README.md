@@ -50,6 +50,11 @@ the first one for <code>ffmpeg_webcam_image_save_to_PNG_using_the_ISO_IMG_filena
 "disable" the two tasks until you'll need them.
 
 <hr/>
+You can use Windows' <code>schtasks</code> command-line to enable or disable those tasks. <br/>
+Enable:  <code>schtasks /change /tn "\YourPath\TaskName" /enable</code>.<br/>
+Stop And Disable: <code>schtasks /end /tn "\YourPath\TaskName"</code> and <code>schtasks /change /tn "\YourPath\TaskName" /disable</code>.
+
+<hr/>
 
 Tip: <br/>
 Better image quality on <code>ffmpeg_webcam_image_save_to_PNG_using_the_ISO_IMG_filename_format___faster___with_timestamp_overlay___...</code> <br/>
