@@ -1,3 +1,7 @@
+::-----------this is a Desktop capturing driver.
+::ffmpeg -y -hide_banner -loglevel "info"   -f dshow -list_options true -i video="screen-capture-recorder"
+
+
 ::-----------this is IBM/Lenovo own (on-screen) integrated camera
 ::ffmpeg -y -hide_banner -loglevel "info"   -f dshow -list_options true -i video="Integrated Camera"
 
